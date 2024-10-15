@@ -3,14 +3,7 @@ import { Quote } from "lucide-react";
 import Image from "next/image";
 import { FC } from "react";
 
-interface TestimonialCardProps extends Testimonial {}
-
-const TestimonialCard: FC<TestimonialCardProps> = ({
-  imageUrl,
-  name,
-  role,
-  review,
-}) => {
+const TestimonialCard: FC<Testimonial> = ({ imageUrl, name, role, review }) => {
   return (
     <article className="flex flex-col items-center md:items-start gap-4 py-6 px-4 rounded-lg hover:bg-slate-800 capitalize">
       <Quote className="w-12 h-12 text-sky-600" />
