@@ -2,9 +2,7 @@ import { Feature } from "@/types/interfaces";
 import Image from "next/image";
 import { FC } from "react";
 
-interface FeatureCardProps extends Feature {}
-
-const FeatureCard: FC<FeatureCardProps> = ({ title, imageUrl, content }) => {
+const FeatureCard: FC<Feature> = ({ title, imageUrl, content }) => {
   return (
     <article className="w-full md:max-w-[30rem] lg:max-w-[36rem] border-2 border-transparent rounded-lg py-4 px-8 hover:bg-slate-800 hover:border-sky-600 cursor-pointer">
       <article className="flex flex-col items-center md:items-start lg:flex-row lg:items-center gap-6">

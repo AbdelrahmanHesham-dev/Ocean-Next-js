@@ -8,7 +8,7 @@ interface ButtonProps {
 
 const Button: FC<ButtonProps> = ({
   variant = "primary",
-  isFullSize,
+  isFullSize = false, 
   children,
 }) => {
   return (
@@ -19,7 +19,7 @@ const Button: FC<ButtonProps> = ({
           : variant === "secondary"
           ? "btn-secondary"
           : "btn-outline"
-      }`}
+      } ${isFullSize ? "btn-full" : ""}`}
     >
       {children}
     </button>
