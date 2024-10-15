@@ -5,7 +5,7 @@ import Image from "next/image"
 function Logo() {
   return (
     <Link href="/" className="flex items-end gap-2">
-      <Image src="/image/logo.webp" width={32} height={32} alt="logo"></Image>
+      <Image src="/logo.webp" width={32} height={32} alt="logo"></Image>
       <div className="relative">
         <h1 className="capitalize text-white text-xl font-bold tracking-wide">
             ocean
